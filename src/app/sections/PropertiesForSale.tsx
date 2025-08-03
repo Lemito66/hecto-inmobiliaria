@@ -1,5 +1,5 @@
 import PropertyCard from "@/components/PropertyCard"
-import { propertiesForSale } from "@/constants/properties"
+import { PROPERTIES_FOR_SALE } from "@/constants/properties"
 
 
 export default function PropertiesForSale() {
@@ -14,7 +14,7 @@ export default function PropertiesForSale() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {propertiesForSale.map((property) => (
+          {PROPERTIES_FOR_SALE.map((property) => (
             <PropertyCard key={property.id} property={property} />
           ))}
         </div>

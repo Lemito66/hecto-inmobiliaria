@@ -1,5 +1,5 @@
 import SoldPropertyCard from "@/components/SoldPropertyCard"
-import { soldProperties } from "@/constants/properties"
+import { SOLD_PROPERTIES } from "@/constants/properties"
 
 
 export default function SoldProperties() {
@@ -14,7 +14,7 @@ export default function SoldProperties() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {soldProperties.map((property) => (
+          {SOLD_PROPERTIES.map((property) => (
             <SoldPropertyCard key={property.id} property={property} />
           ))}
         </div>
