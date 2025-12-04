@@ -6,6 +6,7 @@ import Footer from "./sections/Footer"
 import PropertiesForSale from "./sections/PropertiesForSale"
 import SoldProperties from "./sections/SoldProperties"
 import AboutUs from "./sections/AboutUs"
+import Image from "next/image"
 
 
 export default function HomePage() {

@@ -10,11 +10,13 @@ interface SoldProperty {
 }
 
 export default function SoldPropertyCard({ property }: { property: SoldProperty }) {
+
+  console.log(property.image);
   return (
     <Card className="overflow-hidden shadow-lg dark:bg-gray-700 dark:shadow-gray-900/20 relative">
       <div className="relative">
         <Image
-          src={property.image || "/placeholder.svg"}
+          src={property.image || "/image/quinta.jpeg"}
           alt={property.title}
           width={350}
           height={250}
