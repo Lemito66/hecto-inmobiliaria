@@ -1,52 +1,35 @@
 export const PROPERTIES_FOR_SALE = [
   {
     id: 1,
-    title: "Casa Moderna en La Carolina",
-    price: "$285,000",
-    location: "Ibarra, Quito",
-    area: "180 m²",
+    title: "🏡 Tu nuevo hogar te espera en Yuyucocha Ibarra Imbabura ✨",
+    price: "$110,000",
+    location: "Ibarra, Ecuador",
+    area: "142 m²",
     bedrooms: 3,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "src/images/yuyucocha.jpeg",
   },
   {
     id: 2,
-    title: "Departamento de Lujo en Cumbayá",
-    price: "$350,000",
-    location: "Ibarra, Quito",
-    area: "120 m²",
-    bedrooms: 2,
-    image: "/placeholder.svg?height=300&width=400",
+    title: "🏡 Casas esquineras en venta",
+    price: "$98,000",
+    location: "Ibarra, Ecuador",
+    area: "125 m²",
+    bedrooms: 3,
+    image: "src/images/esquinera.jpeg",
   },
-  {
-    id: 3,
-    title: "Terreno en Pichincha",
-    price: "$150,000",
-    location: "Ibarra, Quito",
-    area: "500 m²",
-    bedrooms: 0,
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  // ...
 ]
 
 export const SOLD_PROPERTIES = [
   {
     id: 1,
-    title: "Casa Colonial Restaurada",
-    location: "Centro Histórico, Quito",
-    image: "/placeholder.svg?height=250&width=350",
+    title: "🌿✨ Vive la tranquilidad del campo con el confort de la ciudad ✨🌿",
+    location: "Ibarra, Ecuador",
+    image: "src/images/campo.jpeg",
   },
   {
     id: 2,
-    title: "Departamento con Vista al Mar",
+    title: "🏡 Casas modernas  en Venta – Sector Residencial Exclusivo Nueva Quinta, Ibarra 🏡",
     location: "Ibarra, Ecuador",
-    image: "/placeholder.svg?height=250&width=350",
+    image: "src/images/quinta.jpeg",
   },
-  {
-    id: 3,
-    title: "Finca en Los Chillos",
-    location: "Ibarra, Ecuador",
-    image: "/placeholder.svg?height=250&width=350",
-  },
-  // ...
 ]
