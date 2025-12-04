@@ -18,15 +18,20 @@ interface Property {
 export default function PropertyCard({ property }: { property: Property }) {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl dark:bg-gray-800 dark:shadow-gray-900/20 dark:hover:shadow-gray-900/40 transition-shadow duration-300">
-      <div className="relative">
+      <div className="relative w-full h-56">
         <Image
-          src={property.image || "/placeholder.svg"}
+          src={property.image}
           alt={property.title}
-          width={400}
-          height={300}
-          className="w-full h-48 object-cover"
+          width={1920}
+          height={1080}
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII="
+          className="w-full h-56 object-cover object-center transition-transform duration-300 hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          quality={75}
         />
       </div>
+
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white line-clamp-2">
           {property.title}

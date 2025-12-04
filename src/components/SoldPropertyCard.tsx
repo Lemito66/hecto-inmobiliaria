@@ -14,13 +14,17 @@ export default function SoldPropertyCard({ property }: { property: SoldProperty 
   console.log(property.image);
   return (
     <Card className="overflow-hidden shadow-lg dark:bg-gray-700 dark:shadow-gray-900/20 relative">
-      <div className="relative">
+      <div className="relative w-full h-56">
         <Image
-          src={property.image || "/image/quinta.jpeg"}
+          src={property.image}
           alt={property.title}
-          width={350}
-          height={250}
-          className="w-full h-48 object-cover"
+          width={1920}
+          height={1080}
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII="
+          className="w-full h-56 object-cover object-center transition-transform duration-300 hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          quality={75}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute top-4 right-4 bg-red-600 text-white font-bold px-3 py-1 rounded text-sm">
