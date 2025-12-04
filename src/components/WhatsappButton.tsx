@@ -1,14 +1,30 @@
-import Link from "next/link"
-import { MessageCircle } from "lucide-react"
+import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 
 export default function WhatsappButton() {
+  // ✅ función integrada en el mismo componente
+  function createWhatsappLink(phone: string, message: string) {
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phone}?text=${encodedMessage}`;
+  }
+  const phone = "593986124403";
+  const message = "Hola, estoy interesado en sus servicios inmobiliarios.";
+  const whatsappURL = createWhatsappLink(phone, message);
+
   return (
     <Link
-      href="https://wa.me/593XXXXXXXXX"
+      href={whatsappURL}
       target="_blank"
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+      aria-label="Contact via WhatsApp"
+      className="
+        fixed bottom-6 right-6 z-50
+        bg-green-600 hover:bg-green-700
+        text-white p-4 rounded-full shadow-lg
+        transition-transform duration-300
+        hover:scale-110 focus:ring-2 focus:ring-green-400 focus:outline-none
+      "
     >
       <MessageCircle className="h-6 w-6" />
     </Link>
-  )
+  );
 }

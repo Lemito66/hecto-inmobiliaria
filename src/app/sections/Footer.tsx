@@ -15,7 +15,7 @@ export default function Footer() {
               encontrar su hogar ideal.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="https://www.facebook.com/ConstructoraHETCO" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="h-6 w-6" />
               </Link>
               <Link href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -33,18 +33,18 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-blue-400" />
-                <span className="text-gray-300">+593 2 XXX-XXXX</span>
+                <span className="text-gray-300">+593 986124403</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-blue-400" />
-                <span className="text-gray-300">info@hetcoinmobiliaria.com</span>
+                <span className="text-gray-300">lemito66@gmail.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-blue-400" />
                 <span className="text-gray-300">
-                  Av. Amazonas N24-03 y Colón
+                  Manuel de la Chica Narvaez y Eusebio Borrero
                   <br />
-                  Quito, Ecuador
+                  Ibarra, Ecuador
                 </span>
               </div>
             </div>
